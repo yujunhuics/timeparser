@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 # @Author : Junhui Yu
-# @File : money_parser.py
+# @File : chinese_parser.py
 # @Time : 2022/10/25 11:17
 
 
@@ -20,7 +20,7 @@ remove_parentheses = extractor.remove_parentheses
 
 
 
-__all__ = ['MoneyParser']
+__all__ = ['ChineseParser']
 
 
 class ChineseParser(object):
