@@ -1,13 +1,11 @@
 # -*- coding: utf-8 -*-
 # @Author : Junhui Yu
-# @File : test.py
+# @File : setup.py
 # @Time : 2022/10/25 15:44
-import os
 
 from setuptools import setup, find_packages
 from setuptools.command.install import install
 import shutil
-from distutils.core import Command
 from pathlib import Path
 
 PACKAGE_NAME = "timeparser"
@@ -54,9 +52,6 @@ def main():
     )
 
 
-
-
-
 if __name__ == "__main__":
     main()
 
@@ -71,37 +66,3 @@ if __name__ == "__main__":
 
     if dist_info.exists():
         shutil.rmtree(dist_info)
-
-# import os
-# import re
-# from setuptools import setup
-#
-# DIR_PATH = os.path.dirname(os.path.abspath(__file__))
-#
-# __version__ = '1.0'
-#
-# __name__ = 'timeparser'
-# __author__ = "Junhui Yu"
-# __copyright__ = "Copyright 2022, Junhui Yu"
-# __credits__ = list()
-# __license__ = "Apache License 2.0"
-# __maintainer__ = "Junhui Yu"
-# __email__ = "junhuy@163.com"
-# __url__ = 'https://github.com/yujunhuics/timeparser'
-# __description__ = 'Time Parsing'
-#
-# setup(name=__name__,
-#       version=__version__,
-#       url=__url__,
-#       author=__author__,
-#       author_email=__email__,
-#       description=__description__,
-#       long_description_content_type='text/markdown',
-#       license=__license__,
-#       py_modules=list(),
-#       include_package_data=True,
-#       test_suite='nose.collector',
-#       tests_require=['nose'])
-#
-# # os.system('rm -rf ./dist ./timeparser.egg-info ./dist')
-# # os.remove('./dist')
